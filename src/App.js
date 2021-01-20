@@ -69,8 +69,8 @@ const App = () => {
         setEquation('0')
         commafy('0')
       }
-      // ADDING DECIMAL DOT AND EQUATION IS MORE THAN 0
-      else if (x === '.' && equation.length > 0 && equation.slice(-1).match(/^[0-9]+$/) !== null) {
+      // ADDING DECIMAL DOT AND EQUATION IS MORE THAN 0 AND NOT DOT IN EQUATION
+      else if (x === '.' && equation.length > 0 && !equation.includes('.') && equation.slice(-1).match(/^[0-9]+$/) !== null) {
         setEquation(equation + x)
         commafy(equation + x)
       }
@@ -86,10 +86,25 @@ const App = () => {
       }
       // GREATER THAN 0 AND IS NOT A NUMBER AND EQUATION LAST CHAR IS A NUMBER (FOR OPERANDS)
       else if (equation.length > 0 && x.match(/^[0-9]+$/) === null && equation.slice(-1).match(/^[0-9]+$/) !== null) {
-        if (x === '+') setEquation(equation + x); commafy(equation + x)
-        if (x === '-') setEquation(equation + x); commafy(equation + x)
-        if (x === '*') setEquation(equation + x); commafy(equation + x)
-        if (x === '/') setEquation(equation + x); commafy(equation + x)
+        if (x === '+') {
+          setEquation(equation + x)
+          commafy(equation + x)
+        }
+        else if (x === '-') {
+          setEquation(equation + x)
+          commafy(equation + x)
+        }
+        else if (x === '*') {
+          setEquation(equation + x)
+          commafy(equation + x)
+        }
+        else if (x === '/') {
+          setEquation(equation + x)
+          commafy(equation + x)
+        }
+      }
+      else {
+        return
       }
 
     }
@@ -122,7 +137,6 @@ const App = () => {
     }
 
   }
-
 
 
   return <Fade up>

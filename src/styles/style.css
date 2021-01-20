@@ -33,7 +33,6 @@ button:focus {
 .calculator {
   display: flex;
   flex-direction: column;
-  /* background-color: black; */
   height: 30rem;
   width: 16rem;
 }
