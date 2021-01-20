@@ -71,8 +71,7 @@ const App = () => {
 
   }
 
-
-
+  // GIVE THE OUTPUT EQUATION COMMAS
   function commafy(num) {
     var str = num.toString().split('.')
 
@@ -85,7 +84,6 @@ const App = () => {
 
     return str.join('.')
   }
-
 
 
   return <div className="iphone">
