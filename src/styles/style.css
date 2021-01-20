@@ -15,6 +15,10 @@ body {
   background-color: black;
 }
 
+button:focus {
+  outline: 0;
+}
+
 .iphone {
   display: flex;
   justify-content: center;
@@ -186,4 +190,3 @@ span {
   direction: ltr;
   unicode-bidi: bidi-override;
 }
-
