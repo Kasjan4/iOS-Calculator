@@ -2,4 +2,4 @@
 
 Made with React Hooks and pure JavaScript logic.
 
-[CHECK IT OUT HERE](https://horizon-project.herokuapp.com/)
+[CHECK IT OUT HERE](https://kasjanhinc.github.io/iOS-Calculator/)
