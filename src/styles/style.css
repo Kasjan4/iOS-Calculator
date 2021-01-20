@@ -15,10 +15,20 @@ body {
   background-color: black;
 }
 
+.iphone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  background-image: url('https://i.imgur.com/ECvK3qP.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .calculator {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  /* background-color: black; */
   height: 30rem;
   width: 16rem;
 }
@@ -176,3 +186,4 @@ span {
   direction: ltr;
   unicode-bidi: bidi-override;
 }
+

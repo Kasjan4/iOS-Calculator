@@ -88,39 +88,41 @@ const App = () => {
 
 
 
-  return <div className="calculator">
+  return <div className="iphone">
 
-    <div className="upper">
-      <p id={equation.length < 5 ? 'output' : 'output-small'} ><span>{commafy(equation)}</span></p>
-    </div>
+    <div className="calculator">
 
-    <div className="lower">
+      <div className="upper">
+        <p id={equation.length < 5 ? 'output' : 'output-small'} ><span>{commafy(equation)}</span></p>
+      </div>
 
-      <button className="c" value="c" onClick={createEquation} >{acButton}</button>
-      <button className="posneg" value="posneg" onClick={createEquation}>+/-</button>
-      <button className="perc" value="perc" onClick={createEquation}>%</button>
-      <button className="div" value="/" onClick={createEquation}>÷</button>
-      <button className="sev" value="7" onClick={createEquation} >7</button>
-      <button className="eigh" value="8" onClick={createEquation} >8</button>
-      <button className="nine" value="9" onClick={createEquation} >9</button>
-      <button className="mult" value="*" onClick={createEquation}>×</button>
-      <button className="four" value="4" onClick={createEquation}>4</button>
-      <button className="five" value="5" onClick={createEquation}>5</button>
-      <button className="six" value="6" onClick={createEquation}>6</button>
-      <button className="min" value="-" onClick={createEquation}>-</button>
-      <button className="one" value="1" onClick={createEquation}>1</button>
-      <button className="two" value="2" onClick={createEquation}>2</button>
-      <button className="three" value="3" onClick={createEquation}>3</button>
-      <button className="plus" value="+" onClick={createEquation}>+</button>
-      <button className="zero" style={{ width: '7rem', borderRadius: '80px' }} value="0" onClick={createEquation}>0</button>
-      <button className="dot" value="." onClick={createEquation}>.</button>
-      <button className="eq" value="eq" onClick={createEquation}>=</button>
+      <div className="lower">
+
+        <button className="c" value="c" onClick={createEquation} >{acButton}</button>
+        <button className="posneg" value="posneg" onClick={createEquation}>+/-</button>
+        <button className="perc" value="perc" onClick={createEquation}>%</button>
+        <button className="div" value="/" onClick={createEquation}>÷</button>
+        <button className="sev" value="7" onClick={createEquation} >7</button>
+        <button className="eigh" value="8" onClick={createEquation} >8</button>
+        <button className="nine" value="9" onClick={createEquation} >9</button>
+        <button className="mult" value="*" onClick={createEquation}>×</button>
+        <button className="four" value="4" onClick={createEquation}>4</button>
+        <button className="five" value="5" onClick={createEquation}>5</button>
+        <button className="six" value="6" onClick={createEquation}>6</button>
+        <button className="min" value="-" onClick={createEquation}>-</button>
+        <button className="one" value="1" onClick={createEquation}>1</button>
+        <button className="two" value="2" onClick={createEquation}>2</button>
+        <button className="three" value="3" onClick={createEquation}>3</button>
+        <button className="plus" value="+" onClick={createEquation}>+</button>
+        <button className="zero" style={{ width: '7rem', borderRadius: '80px' }} value="0" onClick={createEquation}>0</button>
+        <button className="dot" value="." onClick={createEquation}>.</button>
+        <button className="eq" value="eq" onClick={createEquation}>=</button>
+
+      </div>
 
     </div>
 
   </div>
-
-
 }
 
 export default App
