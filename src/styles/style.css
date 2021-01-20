@@ -192,3 +192,36 @@ span {
   unicode-bidi: bidi-override;
 }
 
+@media (max-width: 767px) {
+
+  .c,
+  .posneg,
+  .perc,
+  .div,
+  .sev,
+  .eigh,
+  .nine,
+  .mult,
+  .four,
+  .five,
+  .six,
+  .min,
+  .one,
+  .two,
+  .three,
+  .plus,
+  .zero,
+  .dot,
+  .eq {
+    font-size: 1rem;
+  }
+
+  .plus,
+  .min,
+  .div,
+  .mult,
+  .eq {
+    font-size: 1.3rem;
+  }
+
+}
