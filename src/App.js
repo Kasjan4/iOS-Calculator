@@ -79,6 +79,12 @@ const App = () => {
         setEquation(x)
         commafy(x)
       }
+      // IF MINUS ZERO AND NUMBER IS INPUTTED
+      else if (equation === '-0' && x.match(/^[0-9]+$/) !== null) {
+        const n = String(x - (x * 2))
+        setEquation(n)
+        commafy(n)
+      }
       // EQUATION IS GREATER THAN 0 IS A NUMBER (FOR CONCURRENT DIGITS)
       else if (equation.length > 0 && x.match(/^[0-9]+$/) !== null) {
         setEquation(equation + x)
@@ -138,7 +144,7 @@ const App = () => {
 
   }
 
-
+  console.log(equation)
   return <Fade up>
 
     <div className="iphone">
